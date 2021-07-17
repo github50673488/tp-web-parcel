@@ -1,2 +1,7 @@
-const teacher: string = "liu";
-console.log(teacher);
+function area(shape: string, width: number, height: number) {
+    var area = width * height;
+    return "I'm a " + shape + " with an area of " + area + " cm squared.";
+}
+
+// @ts-ignore
+document.getElementById("hello").innerHTML = area("rectangle", 30, 15);
